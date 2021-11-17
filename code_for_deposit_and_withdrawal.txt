@@ -1,0 +1,14 @@
+#Deposit and Withdrawal
+Total = 0
+while True:
+    a=input("Enter the value: ")
+    if  a=="":
+        break
+    else:
+        a=a.split(" ")
+        if  a[0]=="D":
+            Total=Total+int(a[1])
+        elif a[0]=="W":
+            Total=Total-int(a[1])
+            
+print("Balance left is",Total,"Rs.")
